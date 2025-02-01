@@ -46,3 +46,6 @@ PS D:\CODING\reels_pro_app> npx create-next-app@latest .
 √ Would you like to use Turbopack for `next dev`? ... No / Yes
 √ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
 Creating a new Next.js app in D:\CODING\reels_pro_app.
+
+
+npm i mongoose
