@@ -50,3 +50,8 @@ Creating a new Next.js app in D:\CODING\reels_pro_app.
 
 npm i mongoose
 npm i bcryptjs
+
+
+```
+api folder in app is for backend
+```
