@@ -53,5 +53,5 @@ npm i bcryptjs
 
 
 ```
-api folder in app is for backend
+api folder (app) in app is for backend
 ```
