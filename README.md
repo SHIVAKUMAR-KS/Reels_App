@@ -55,3 +55,9 @@ npm i bcryptjs
 ```
 api folder (app) in app is for backend
 ```
+
+```
+next auth
+
+ npm i next-auth
+```
