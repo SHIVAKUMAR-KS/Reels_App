@@ -42,3 +42,16 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
+
+//to get on frontend
+// const res= fetch("/api/auth/register",{
+//   method: "POST",
+//   headers: {"Content-Type": "application/json"},
+//   body: JSON.stringify({
+//     email: "test@example.com",
+//     password: "test123"
+//   })
+
+// })
+// res.json()
