@@ -61,3 +61,8 @@ next auth
 
  npm i next-auth
 ```
+
+```
+npm i imagekit
+npm install imagekitio-next
+```
