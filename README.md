@@ -66,3 +66,10 @@ next auth
 npm i imagekit
 npm install imagekitio-next
 ```
+
+```
+api-client
+https://www.youtube.com/watch?v=3DvxjJPKdzI&t=1205s
+
+27 minutes
+```
