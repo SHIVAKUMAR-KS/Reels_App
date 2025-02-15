@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     await connectToDatabase();
 
-    // Check if user already exis
+    // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return NextResponse.json(
@@ -27,7 +27,6 @@ export async function POST(request: NextRequest) {
     await User.create({
       email,
       password,
-      role: "user", // Default role
     });
 
     return NextResponse.json(
@@ -42,16 +41,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-
-
-//to get on frontend
-// const res= fetch("/api/auth/register",{
-//   method: "POST",
-//   headers: {"Content-Type": "application/json"},
-//   body: JSON.stringify({
-//     email: "test@example.com",
-//     password: "test123"
-//   })
-
-// })
-// res.json()

@@ -1,75 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ImageKit Video Shop
+
+A modern Next.js application for managing and selling video content using ImageKit integration. This project provides a full-featured platform with user authentication, video upload capabilities, and payment processing using Razorpay.
+
+## Features
+
+- 🔐 User Authentication (NextAuth.js)
+- 📹 Video Upload and Management (ImageKit)
+- 💳 Payment Processing (Razorpay)
+- 🎨 Modern UI with Tailwind CSS and DaisyUI
+- 📱 Fully Responsive Design
+- 🔒 Secure API Routes
+- 📧 Email Notifications (Nodemailer)
+- 🗄️ MongoDB Database Integration
+
+## Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS, DaisyUI
+- **Authentication**: NextAuth.js, JWT
+- **Database**: MongoDB with Mongoose
+- **File Storage**: ImageKit
+- **Payment**: Razorpay
+- **Email**: Nodemailer
+- **Form Handling**: React Hook Form
+
+## Prerequisites
+
+- Node.js (Latest LTS version)
+- MongoDB Database
+- ImageKit Account
+- Razorpay Account
+- SMTP Server (for email notifications)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd imagekit-video-main
+```
 
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Configure environment variables:
+   - Copy `.env.example` to `.env`
+   - Fill in the required environment variables
+
+4. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file with the following variables:
 
-## Learn More
+```env
+# Database
+MONGODB_URI=
 
-To learn more about Next.js, take a look at the following resources:
+# Authentication
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# ImageKit
+IMAGEKIT_PUBLIC_KEY=
+IMAGEKIT_PRIVATE_KEY=
+IMAGEKIT_URL_ENDPOINT=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Razorpay
+RAZORPAY_KEY_ID=
+RAZORPAY_KEY_SECRET=
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
------
-PS D:\CODING\reels_pro_app> npx create-next-app@latest .
-√ Would you like to use TypeScript? ... No / Yes
-√ Would you like to use ESLint? ... No / Yes
-√ Would you like to use Tailwind CSS? ... No / Yes
-√ Would you like your code inside a `src/` directory? ... No / Yes
-√ Would you like to use App Router? (recommended) ... No / Yes
-√ Would you like to use Turbopack for `next dev`? ... No / Yes
-√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
-Creating a new Next.js app in D:\CODING\reels_pro_app.
-
-
-npm i mongoose
-npm i bcryptjs
-
-
-```
-api folder (app) in app is for backend
+# Email (SMTP)
+SMTP_HOST=
+SMTP_PORT=
+SMTP_USER=
+SMTP_PASS=
 ```
 
-```
-next auth
+## Available Scripts
 
- npm i next-auth
-```
+- `npm run dev` - Start development server
+- `npm run build` - Build production application
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run seed` - Seed the database
+- `npm run mailtrap` - Test email configuration
+
+## Project Structure
 
 ```
-npm i imagekit
-npm install imagekitio-next
+├── app/                  # Next.js app directory
+│   ├── api/             # API routes
+│   ├── components/      # Reusable components
+│   ├── login/          # Login page
+│   ├── register/       # Registration page
+│   └── upload/         # Video upload page
+├── lib/                # Utility functions
+├── models/             # MongoDB models
+├── public/            # Static assets
+└── types.d.ts         # TypeScript declarations
 ```
 
-```
-api-client
-https://www.youtube.com/watch?v=3DvxjJPKdzI&t=1205s
+## Contributing
 
-27 minutes
-```
+NO CONTRIBUTING PLEASE!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, watch youtube video
