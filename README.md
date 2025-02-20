@@ -7,7 +7,7 @@ A modern Next.js application for managing and selling video content using ImageK
 - 🔐 User Authentication (NextAuth.js)
 - 📹 Video Upload and Management (ImageKit)
 - 💳 Payment Processing (Razorpay)
-- 🎨 Modern UI with Tailwind CSS and DaisyUI
+- 🎨 Modern UI with Tailwind CSS and DaisyUIa
 - 📱 Fully Responsive Design
 - 🔒 Secure API Routes
 - 📧 Email Notifications (Nodemailer)
