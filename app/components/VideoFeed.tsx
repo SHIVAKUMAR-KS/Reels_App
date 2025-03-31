@@ -33,7 +33,7 @@ export default function VideoFeed({ videos }: VideoFeedProps) {
       <section>
         <h2 className="text-2xl font-semibold text-center mb-6">Images</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {/* Example Image Display with ImageKit */}
+          {/* Example Image Display with ImageKit*/}
           {/* You can add more images here or dynamically map through image data */}
           <IKImage
             urlEndpoint={urlEndpoint}
